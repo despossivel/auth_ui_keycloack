@@ -2,11 +2,9 @@ import React, {  useEffect } from 'react';
 import { useKeycloak } from '@react-keycloak/web';
 import { useMain } from '@/presentation/contexts';
 import {
-  Hello
-} from "@/presentation/components/hello"
-import {
+  Hello,
   Loading
-} from "@/presentation/components/loading"
+} from "@/presentation/components"
 
 export const MakeInitSetup: React.FC = () => {
   const {
