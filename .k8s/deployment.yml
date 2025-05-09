@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth_ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth_ui
+  template:
+    metadata:
+      labels:
+        app: auth_ui
+    spec:
+      containers:
+        - name: auth_ui
+          image: despossivel/auth_ui:TAG
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: regcred

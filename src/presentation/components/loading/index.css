@@ -1,0 +1,49 @@
+.margin-top-x {
+  margin-top: 18px;
+}
+
+.container-loader {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: #131413;
+  color: #f2f2f2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-loader .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-loader .content span {
+  /* font-weight: 500; */
+  font-size: 18px;
+}
+
+/* .container-loader .content small {} */
+
+.loader-spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid rgb(101 101 101);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
