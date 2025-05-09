@@ -10,7 +10,6 @@ import { Router } from './router';
 import '@/presentation/i18n/config';
 
 
-
 const queryClient = new QueryClient();
 
 
