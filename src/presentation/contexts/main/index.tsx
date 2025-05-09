@@ -9,9 +9,10 @@ const SetupContext = createContext<ISetupContext>({} as ISetupContext);
  
 export const SetupProvider: React.FC<Props> = ({ children }: Props) => {
   const [setup, setSetup] = useState<string>('');
+   const [loader, setLoader] = useState<boolean>(false);
 
   return (
-    <SetupContext.Provider value={{ setup, setSetup }}>
+    <SetupContext.Provider value={{ setup, setSetup, loader, setLoader }}>
       {children}
     </SetupContext.Provider>
   );
